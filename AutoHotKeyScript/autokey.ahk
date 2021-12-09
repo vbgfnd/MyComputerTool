@@ -33,6 +33,25 @@ if(KeyFunctionSwitch="false"){
 	return
 }
 
+$[::
+if(MouseSwitch="true"){
+	Send {WheelDown}
+	return
+}
+else{
+	Send [
+	return
+}
+$]::
+if(MouseSwitch="true"){
+	Send {WheelUp}
+	return
+}
+else{
+	Send ]
+	return
+}
+
 $k::
 if(MouseSwitch="true"){
 	MouseMove, 0, -27, 0, R ;
