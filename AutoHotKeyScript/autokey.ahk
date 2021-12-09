@@ -33,22 +33,22 @@ if(KeyFunctionSwitch="false"){
 	return
 }
 
-$[::
+$]::
 if(MouseSwitch="true"){
 	Send {WheelDown}
 	return
 }
 else{
-	Send [
+	Send ]
 	return
 }
-$]::
+$[::
 if(MouseSwitch="true"){
 	Send {WheelUp}
 	return
 }
 else{
-	Send ]
+	Send [
 	return
 }
 
