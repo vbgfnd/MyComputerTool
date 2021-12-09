@@ -4,7 +4,12 @@ global KeyFunctionSwitch:="false" ;define a var
 
 ;mouse control: hjkl Vim move mode and n=left Click, m=right click, 6=left down, y=left up 
 
-!+^m:: ;alt+ctrl+shift+m MouseSwitch 
+!+n:: ;alt+shift+n close all switch 
+	MouseSwitch:="false"
+	KeyFunctionSwitch:="false"
+	return
+
+!+m:: ;alt+ctrl+shift+m MouseSwitch 
 if(MouseSwitch="false"){
 	MouseSwitch:="true"
 	KeyFunctionSwitch:="false"
@@ -17,7 +22,7 @@ if(MouseSwitch="false"){
 
 ;keyboard function: 7=Insert,u=del,8=home,i=end,9=pageup, o=pagedown
 
-!+^k::  ;alt+ctrl+shift+k KeyFunctionSwitch 
+!+k::  ;alt+ctrl+shift+k KeyFunctionSwitch 
 if(KeyFunctionSwitch="false"){
 	KeyFunctionSwitch:="true"
 	MouseSwitch:="false"
