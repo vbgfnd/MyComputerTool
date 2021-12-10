@@ -208,6 +208,15 @@ else{
 	Send i
 	return
 }
+$+i::
+if(KeyFunctionSwitch="true"){
+	Send +{End}
+	return
+}
+else{
+	Send +i
+	return
+}
 $8::
 if(KeyFunctionSwitch="true" or MouseSwitch="true"){
 	Send {Home}
