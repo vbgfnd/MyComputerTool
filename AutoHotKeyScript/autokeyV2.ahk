@@ -1,107 +1,118 @@
 #MenuMaskKey VK7c
->!h::
+
+AppsKey::
+	return
+Launch_Mail::
+	return
+Launch_App2::
+	return
+
+AppsKey & h::
 	MouseMove, -27, 0, 0, R 
 	return
->!j::
+AppsKey & j::
 	MouseMove, 0, 27, 0, R  
 	return
->!k::
+AppsKey & k::
 	MouseMove, 0, -27, 0, R ;
 	return
->!l::
+AppsKey & l::
 	MouseMove, 27, 0, 0, R  
 	return
 
-!+h::
+Launch_Mail & h::
 	MouseMove, -5, 0, 0, R 
 	return
-!+j::
+Launch_Mail & j::
 	MouseMove, 0, 5, 0, R 
 	return
-!+k::
+Launch_Mail & ::
 	MouseMove, 0, -5, 0, R 
 	return
-!+l::
+Launch_Mail & ::
 	MouseMove, 5, 0, 0, R 
 	return
 
->!n::
+AppsKey & n::
 	Click,down,left 
 	Click,up,left 
 	return
->!m::
+AppsKey & m::
 	Click, down, right
 	Click, up, right
 	return
 
->!i::
+AppsKey & i::
 	Click,down,left
 	return
->!o::
+AppsKey & o::
 	Click,up,left
 	return
 
->!w::
-	Send {Up}
-	return
->!+w::
-	Send +{Up}
-	return
->!s::
-	Send {Down}
-	return
->!+s::
-	Send +{Down}
-	return
->!a::
-	Send {Left}
-	return
->!+a::
-	Send +{Left}
-	return
->!d::
-	Send {Right}
-	return
->!+d::
-	Send +{Right}
-	return
-
->!]::
+AppsKey & ]::
 	Send {WheelDown}
 	return
->![::
+AppsKey & [::
 	Send {WheelUp}
 	return
 
->!1::
+AppsKey & d::
+	Send {Up}
+	return
+Launch_Mail & d::
+	Send +{Up}
+	return
+AppsKey & s::
+	Send {Down}
+	return
+Launch_Mail & s::
+	Send +{Down}
+	return
+AppsKey & a::
+	Send {Left}
+	return
+Launch_Mail & a::
+	Send +{Left}
+	return
+AppsKey & f::
+	Send {Right}
+	return
+Launch_Mail & f::
+	Send +{Right}
+	return
+
+
+
+
+AppsKey & 1::
 	Send {Insert}
 	return
->!q::
+AppsKey & q::
 	Send {Delete}
 	return
 
->!2::
+AppsKey & 2::
 	Send {Home}
 	return
->!+2::
+Launch_Mail & 2::
 	Send +{Home}
 	return
->!x::
+AppsKey & w::
 	Send {End}
 	return
->!+x::
+Launch_Mail & w::
 	Send +{End}
 	return
->!3::
+AppsKey & 3::
 	Send {PgUp}
 	return
->!^3::
+Launch_App2 & 3::
 	Send ^{PgUp}
 	return
->!e::
+AppsKey & e::
 	Send {PgDn}
 	return
->!^e::
+Launch_App2 & e::
 	Send ^{PgDn}
 	return
 
