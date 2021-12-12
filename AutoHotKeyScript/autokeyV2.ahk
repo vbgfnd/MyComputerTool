@@ -1,51 +1,67 @@
 #MenuMaskKey VK7c
-
+;菜单栏-RAlt
 AppsKey::
 	return
+;email-RShift
 Launch_Mail::
 	return
+;计算器按键-RCtrl
 Launch_App2::
 	return
 
-AppsKey & h::
+AppsKey & k::
 	MouseMove, -27, 0, 0, R 
 	return
-AppsKey & j::
+AppsKey & l::
 	MouseMove, 0, 27, 0, R  
 	return
-AppsKey & k::
+AppsKey & `;::
 	MouseMove, 0, -27, 0, R ;
 	return
-AppsKey & l::
+AppsKey & '::
 	MouseMove, 27, 0, 0, R  
 	return
 
-Launch_Mail & h::
+Launch_Mail & k::
 	MouseMove, -5, 0, 0, R 
 	return
-Launch_Mail & j::
+Launch_Mail & l::
 	MouseMove, 0, 5, 0, R 
 	return
-Launch_Mail & ::
+Launch_Mail & `;::
 	MouseMove, 0, -5, 0, R 
 	return
-Launch_Mail & ::
+Launch_Mail & '::
 	MouseMove, 5, 0, 0, R 
 	return
 
-AppsKey & n::
+AppsKey & ,::
 	Click,down,left 
 	Click,up,left 
 	return
-AppsKey & m::
+Launch_Mail & ,::
+	Click,down,left 
+	Click,up,left 
+	return
+AppsKey & .::
+	Click, down, right
+	Click, up, right
+	return
+Launch_Mail & .::
 	Click, down, right
 	Click, up, right
 	return
 
-AppsKey & i::
+AppsKey & o::
 	Click,down,left
 	return
-AppsKey & o::
+Launch_Mail & o::
+	Click,down,left
+	return
+AppsKey & p::
+	Click,up,left
+	return
+Launch_Mail & p::
 	Click,up,left
 	return
 
