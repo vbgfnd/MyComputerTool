@@ -124,11 +124,17 @@ AppsKey & 2::
 Launch_Mail & 2::
 	Send +{Home}
 	return
+Launch_App2 & 2::
+	Send ^{Home}
+	return
 AppsKey & w::
 	Send {End}
 	return
 Launch_Mail & w::
 	Send +{End}
+	return
+Launch_App2 & w::
+	Send ^{End}
 	return
 AppsKey & 3::
 	Send {PgUp}
