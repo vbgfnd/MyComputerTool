@@ -78,11 +78,17 @@ AppsKey & d::
 Launch_Mail & d::
 	Send +{Up}
 	return
+Launch_App2 & d::
+	Send ^{Up}
+	return
 AppsKey & s::
 	Send {Down}
 	return
 Launch_Mail & s::
 	Send +{Down}
+	return
+Launch_App2 & s::
+	Send ^{Down}
 	return
 AppsKey & a::
 	Send {Left}
@@ -90,13 +96,18 @@ AppsKey & a::
 Launch_Mail & a::
 	Send +{Left}
 	return
+Launch_App2 & a::
+	Send ^{Left}
+	return
 AppsKey & f::
 	Send {Right}
 	return
 Launch_Mail & f::
 	Send +{Right}
 	return
-
+Launch_App2 & f::
+	Send ^{Right}
+	return
 
 
 
