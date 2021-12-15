@@ -1,7 +1,6 @@
 #MenuMaskKey VK7c
 ;ScrollLock-RAlt--Fn
-ScrollLock::
-	return
+ScrollLock::VK7c
 #If GetKeyState("ScrollLock", "P")
 j::
 	MouseMove, -12, 0, 0, R 
