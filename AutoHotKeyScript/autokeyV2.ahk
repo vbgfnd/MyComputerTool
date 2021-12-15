@@ -1,154 +1,259 @@
 #MenuMaskKey VK7c
-;菜单栏-RAlt
+;菜单栏-RAlt--Fn
 AppsKey::
 	return
-;email-RShift
-Launch_Mail::
+
+#If GetKeyState("AppsKey", "P")
+j::
+	MouseMove, -12, 0, 0, R 
 	return
-;计算器按键-RCtrl
-Launch_App2::
+k::
+	MouseMove, 0, 13.5, 0, R  
+	return
+i::
+	MouseMove, 0, -13.5, 0, R ;
+	return
+l::
+	MouseMove, 12, 0, 0, R  
 	return
 
-AppsKey & k::
-	MouseMove, -27, 0, 0, R 
++j::
+	MouseMove, -1, 0, 0, R 
 	return
-AppsKey & l::
-	MouseMove, 0, 27, 0, R  
++k::
+	MouseMove, 0, 1, 0, R 
 	return
-AppsKey & `;::
-	MouseMove, 0, -27, 0, R ;
++i::
+	MouseMove, 0, -1, 0, R 
 	return
-AppsKey & '::
-	MouseMove, 27, 0, 0, R  
-	return
-
-Launch_Mail & k::
-	MouseMove, -5, 0, 0, R 
-	return
-Launch_Mail & l::
-	MouseMove, 0, 5, 0, R 
-	return
-Launch_Mail & `;::
-	MouseMove, 0, -5, 0, R 
-	return
-Launch_Mail & '::
-	MouseMove, 5, 0, 0, R 
++l::
+	MouseMove, 1, 0, 0, R 
 	return
 
-AppsKey & ,::
+n::
+!n::
+^n::
 	Click,down,left 
 	Click,up,left 
 	return
-Launch_Mail & ,::
++n::
 	Click,down,left 
 	Click,up,left 
 	return
-AppsKey & .::
+m::
+!m::
+^m::
 	Click, down, right
 	Click, up, right
 	return
-Launch_Mail & .::
++m::
 	Click, down, right
 	Click, up, right
 	return
 
-AppsKey & o::
+u::
 	Click,down,left
 	return
-Launch_Mail & o::
++u::
 	Click,down,left
 	return
-AppsKey & p::
+o::
 	Click,up,left
 	return
-Launch_Mail & p::
++o::
 	Click,up,left
 	return
-
-AppsKey & ]::
+]::
 	Send {WheelDown}
 	return
-AppsKey & [::
+[::
 	Send {WheelUp}
 	return
 
-AppsKey & d::
+e::
 	Send {Up}
 	return
-Launch_Mail & d::
++e::
 	Send +{Up}
 	return
-Launch_App2 & d::
+^e::
 	Send ^{Up}
 	return
-AppsKey & s::
+d::
 	Send {Down}
 	return
-Launch_Mail & s::
++d::
 	Send +{Down}
 	return
-Launch_App2 & s::
+^d::
 	Send ^{Down}
 	return
-AppsKey & a::
+s::
 	Send {Left}
 	return
-Launch_Mail & a::
++s::
 	Send +{Left}
 	return
-Launch_App2 & a::
+^s::
 	Send ^{Left}
 	return
-AppsKey & f::
+f::
 	Send {Right}
 	return
-Launch_Mail & f::
++f::
 	Send +{Right}
 	return
-Launch_App2 & f::
+^f::
 	Send ^{Right}
 	return
 
-
-
-AppsKey & 1::
+;功能键
+q::
 	Send {Insert}
 	return
-AppsKey & q::
+a::
 	Send {Delete}
 	return
-
-AppsKey & 2::
+w::
 	Send {Home}
 	return
-Launch_Mail & 2::
++w::
 	Send +{Home}
 	return
-Launch_App2 & 2::
+^w::
 	Send ^{Home}
 	return
-AppsKey & w::
+r::
 	Send {End}
 	return
-Launch_Mail & w::
++r::
 	Send +{End}
 	return
-Launch_App2 & w::
+^r::
 	Send ^{End}
 	return
-AppsKey & 3::
+t::
 	Send {PgUp}
 	return
-Launch_App2 & 3::
+^t::
 	Send ^{PgUp}
 	return
-AppsKey & e::
+y::
 	Send {PgDn}
 	return
-Launch_App2 & e::
+^y::
 	Send ^{PgDn}
 	return
 
 
+1::
+	Send {F1}
+	return
+2::
+	Send {F2}
+	return 
+3::
+	Send {F3}
+	return
+4::
+	Send {F4}
+	return 
+5::
+	Send {F5}
+	return 
+6::
+	Send {F6}
+	return 
+7::
+	Send {F7}
+	return
+8::
+	Send {F8}
+	return 
+9::
+	Send {F9}
+	return 
+0::
+	Send {F10}
+	return 
+-::
+	Send {F11}
+	return 
+=::
+	Send {F12}
+	return 
+^1::
+	Send ^{F1}
+	return
+^2::
+	Send ^{F2}
+	return 
+^3::
+	Send ^{F3}
+	return
+^4::
+	Send ^{F4}
+	return 
+^5::
+	Send ^{F5}
+	return 
+^6::
+	Send ^{F6}
+	return 
+^7::
+	Send ^{F7}
+	return
+^8::
+	Send ^{F8}
+	return 
+^9::
+	Send ^{F9}
+	return 
+^0::
+	Send ^{F10}
+	return 
+^-::
+	Send ^{F11}
+	return 
+^=::
+	Send ^{F12}
+	return
+!1::
+	Send !{F1}
+	return
+!2::
+	Send !{F2}
+	return 
+!3::
+	Send !{F3}
+	return
+!4::
+	Send !{F4}
+	return 
+!5::
+	Send !{F5}
+	return 
+!6::
+	Send !{F6}
+	return 
+!7::
+	Send !{F7}
+	return
+!8::
+	Send !{F8}
+	return 
+!9::
+	Send !{F9}
+	return 
+!0::
+	Send !{F10}
+	return 
+!-::
+	Send !{F11}
+	return 
+!=::
+	Send !{F12}
+	return
+ #If
 
 
