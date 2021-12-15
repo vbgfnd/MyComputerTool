@@ -115,8 +115,26 @@ f::
 q::
 	Send {Insert}
 	return
+^q::
+	Send ^{Insert}
+	return
++q::
+	Send +{Insert}
+	return
+!q::
+	Send !{Insert}
+	return
 a::
 	Send {Delete}
+	return
+^a::
+	Send ^{Delete}
+	return
++a::
+	Send +{Delete}
+	return
+!a::
+	Send !{Delete}
 	return
 w::
 	Send {Home}
