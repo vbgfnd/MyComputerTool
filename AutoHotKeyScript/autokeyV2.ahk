@@ -1,9 +1,8 @@
 #MenuMaskKey VK7c
-;菜单栏-RAlt--Fn
-AppsKey::
+;ScrollLock-RAlt--Fn
+ScrollLock::
 	return
-
-#If GetKeyState("AppsKey", "P")
+#If GetKeyState("ScrollLock", "P")
 j::
 	MouseMove, -12, 0, 0, R 
 	return
@@ -29,7 +28,7 @@ l::
 +l::
 	MouseMove, 1, 0, 0, R 
 	return
-
+ 
 n::
 !n::
 ^n::
@@ -97,6 +96,9 @@ s::
 ^s::
 	Send ^{Left}
 	return
+!s::
+	Send !{Left}
+	return
 f::
 	Send {Right}
 	return
@@ -105,6 +107,9 @@ f::
 	return
 ^f::
 	Send ^{Right}
+	return
+!f::
+	Send !{Right}
 	return
 
 ;功能键
@@ -138,10 +143,10 @@ t::
 ^t::
 	Send ^{PgUp}
 	return
-y::
+g::
 	Send {PgDn}
 	return
-^y::
+^g::
 	Send ^{PgDn}
 	return
 
