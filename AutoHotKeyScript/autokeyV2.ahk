@@ -74,17 +74,29 @@ e::
 +e::
 	Send +{Up}
 	return
+!e::
+	Send !{Up}
+	return
 ^e::
 	Send ^{Up}
 	return
+!^e::
+	Send !^{Up}
+	return 
 d::
 	Send {Down}
 	return
 +d::
 	Send +{Down}
 	return
+!d::
+	Send !{Down}
+	return
 ^d::
 	Send ^{Down}
+	return
+!^d::
+	Send !^{Down}
 	return
 s::
 	Send {Left}
@@ -98,6 +110,9 @@ s::
 !s::
 	Send !{Left}
 	return
+!^s::
+	Send !^{Left}
+	return
 f::
 	Send {Right}
 	return
@@ -109,6 +124,9 @@ f::
 	return
 !f::
 	Send !{Right}
+	return
+!^f::
+	Send !^{Right}
 	return
 
 ;功能键
@@ -276,6 +294,43 @@ g::
 !=::
 	Send !{F12}
 	return
++^1::
+	Send +!{F1}
+	return
++^2::
+	Send +^{F2}
+	return 
++^3::
+	Send +^{F3}
+	return
++^4::
+	Send +^{F4}
+	return 
++^5::
+	Send +^{F5}
+	return 
++^6::
+	Send +^{F6}
+	return 
++^7::
+	Send +^{F7}
+	return
++^8::
+	Send +^{F8}
+	return 
++^9::
+	Send +^{F9}
+	return 
++^0::
+	Send +^{F10}
+	return 
++^-::
+	Send +^{F11}
+	return 
++^=::
+	Send +^{F12}
+	return
+
  #If
 
 
