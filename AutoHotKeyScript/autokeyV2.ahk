@@ -9,7 +9,7 @@ j::
 k::
 	MouseMove, 0, 13.5, 0, R  
 	return
-i::#MaxHotkeysPerInterval 200
+i::
 	MouseMove, 0, -13.5, 0, R ;
 	return
 l::
