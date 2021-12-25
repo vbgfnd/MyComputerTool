@@ -1,4 +1,5 @@
 #MenuMaskKey VK7c
+#MaxHotkeysPerInterval 200
 ;ScrollLock-RAlt--Fn
 ScrollLock::VK7c
 #If GetKeyState("ScrollLock", "P")
@@ -8,13 +9,24 @@ j::
 k::
 	MouseMove, 0, 13.5, 0, R  
 	return
-i::
+i::#MaxHotkeysPerInterval 200
 	MouseMove, 0, -13.5, 0, R ;
 	return
 l::
 	MouseMove, 12, 0, 0, R  
 	return
-
+!#j::
+	MouseMove, -640, 0, 0, R 
+	return
+!#k::
+	MouseMove, 0, 360, 0, R 
+	return
+!#i::
+	MouseMove, 0, -360, 0, R 
+	return
+!#l::
+	MouseMove, 640, 0, 0, R 
+	return
 +j::
 	MouseMove, -1, 0, 0, R 
 	return
@@ -183,6 +195,9 @@ g::
 	return
 ^g::
 	Send ^{PgDn}
+	return
+z::
+	Send {Backspace}
 	return
 
 
