@@ -208,7 +208,9 @@ g::
 z::
 	Send {Backspace}
 	return
-
+!^c::
+	Send !^{Break}
+	return
 
 1::
 	Send {F1}
