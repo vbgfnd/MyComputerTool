@@ -209,7 +209,7 @@ z::
 	Send {Backspace}
 	return
 !^c::
-	Send !^{Break}
+	Send !^{Pause}
 	return
 
 1::
