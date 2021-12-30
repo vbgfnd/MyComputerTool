@@ -2,6 +2,10 @@
 #MaxHotkeysPerInterval 200
 ;ScrollLock-RAlt--Fn
 ScrollLock::VK7c
+;!是alt键
+;^是ctrl键
+;+是shift键
+;#是win键
 #If GetKeyState("ScrollLock", "P")
 j::
 	MouseMove, -12, 0, 0, R 
@@ -125,6 +129,9 @@ s::
 !^s::
 	Send !^{Left}
 	return
++^s::
+	Send +^{Left}
+	return
 f::
 	Send {Right}
 	return
@@ -140,7 +147,9 @@ f::
 !^f::
 	Send !^{Right}
 	return
-
++^f::
+	Send +^{Right}
+	return
 ;功能键
 q::
 	Send {Insert}
