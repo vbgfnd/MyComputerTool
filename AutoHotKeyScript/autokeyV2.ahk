@@ -20,16 +20,16 @@ l::
 	MouseMove, 12, 0, 0, R  
 	return
 !#j::
-	MouseMove, -640, 0, 0, R 
+	MouseMove, -320, 0, 0, R 
 	return
 !#k::
-	MouseMove, 0, 360, 0, R 
+	MouseMove, 0, 180, 0, R 
 	return
 !#i::
-	MouseMove, 0, -360, 0, R 
+	MouseMove, 0, -180, 0, R 
 	return
 !#l::
-	MouseMove, 640, 0, 0, R 
+	MouseMove, 320, 0, 0, R 
 	return
 +j::
 	MouseMove, -1, 0, 0, R 
