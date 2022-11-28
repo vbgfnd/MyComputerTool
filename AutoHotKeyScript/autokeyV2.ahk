@@ -184,6 +184,9 @@ w::
 ^w::
 	Send ^{Home}
 	return
++^w::
+	Send +^{Home} 
+	return
 r::
 	Send {End}
 	return
@@ -192,6 +195,9 @@ r::
 	return
 ^r::
 	Send ^{End}
+	return
++^r::
+	Send +^{End}
 	return
 t::
 	Send {PgUp}
