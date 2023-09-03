@@ -1,25 +1,28 @@
-#MenuMaskKey VK7c
-#MaxHotkeysPerInterval 200
-;ScrollLock-RAlt--Fn
-ScrollLock::VK7c
 ;!是alt键
 ;^是ctrl键
 ;+是shift键
 ;#是win键
+
+
+#Requires AutoHotkey v1.1.33
+dist := 12 ; Distance to move mouse
+dist2 := 13.5 ;
+freq := 25 ; Timer frequency
 #If GetKeyState("ScrollLock", "P")
-j::
-		MouseMove, -12, 0, 0, R 
-		return
-	
-k::
-	MouseMove, 0, 13.5, 0, R  
-	return
 i::
-	MouseMove, 0, -13.5, 0, R ;
-	return
+j::
+k::
 l::
-	MouseMove, 12, 0, 0, R  
-	return
+If on
+ Return
+SetTimer Go, % freq
+Go:
+If on := (x := dist * (GetKeyState("l", "P") - GetKeyState("j", "P")))
+       | (y := dist2 * (GetKeyState("k", "P") - GetKeyState("i", "P")))
+ MouseMove x, y, 0, R
+Else SetTimer,, Off
+Return
+
 !#j::
 	MouseMove, -640, 0, 0, R 
 	return
