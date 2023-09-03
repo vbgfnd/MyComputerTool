@@ -24,3 +24,6 @@
 
 ### 功能键还可以继续组合：
 1. 如需要使用 Shift + End 选择范围文本： Shift + RAlt + r
+
+![Uploading image.png…]()
+
