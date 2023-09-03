@@ -3,7 +3,7 @@
 
 # 使用步骤：
 1. 使用键盘映射将右边 Alt 改键，如：使用 KeyTWeak 将 Alt 改为 ScrollLock 键
-2. 安装 AutoHotKey，运行脚本
+2. 安装 AutoHotKey，运行脚本 autokeyV2.ahk
 
 # 使用示例：
 ### 鼠标使用：
@@ -12,6 +12,8 @@
 3. RAlt + o = 鼠标松开左键
 4. RAlt + n = 鼠标单击左键
 5. RAlt + m = 鼠标单击右键
+6. Win + LAlt + RAlt + ikjl = 较大距离移动鼠标上下左右
+7. Shift + RAlt + ikjl = 以 1 像素距离移动鼠标上下左右
 
 ### F1-F12：
 1. RAlt + 1234567890-= = F1-F12
