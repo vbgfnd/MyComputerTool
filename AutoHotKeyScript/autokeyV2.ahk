@@ -13,8 +13,6 @@ i::
 j::
 k::
 l::
-If on
- Return
 SetTimer Go, % freq
 Go:
 If on := (x := dist * (GetKeyState("l", "P") - GetKeyState("j", "P")))
