@@ -5,7 +5,7 @@
 
 
 #Requires AutoHotkey v1.1.33
-dist := 12 ; Distance to move mouse
+dist := 10 ; Distance to move mouse
 dist2 := 13.5 ;
 freq := 25 ; Timer frequency
 #If GetKeyState("ScrollLock", "P")
