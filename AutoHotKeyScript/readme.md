@@ -5,6 +5,9 @@
 1. 使用键盘映射将右边 Alt 改键，如：使用 KeyTWeak 将 Alt 改为 ScrollLock 键
 2. 安装 AutoHotKey，运行脚本 autokeyV2.ahk
 
+RAlt = 右边 Alt
+LAlt = 左边 Alt
+
 # 使用示例：
 ### 鼠标使用：
 1. RAlt + ikjl = 鼠标上下左右
