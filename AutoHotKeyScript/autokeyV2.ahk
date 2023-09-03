@@ -8,8 +8,9 @@ ScrollLock::VK7c
 ;#是win键
 #If GetKeyState("ScrollLock", "P")
 j::
-	MouseMove, -12, 0, 0, R 
-	return
+		MouseMove, -12, 0, 0, R 
+		return
+	
 k::
 	MouseMove, 0, 13.5, 0, R  
 	return
@@ -20,16 +21,16 @@ l::
 	MouseMove, 12, 0, 0, R  
 	return
 !#j::
-	MouseMove, -320, 0, 0, R 
+	MouseMove, -640, 0, 0, R 
 	return
 !#k::
-	MouseMove, 0, 180, 0, R 
+	MouseMove, 0, 360, 0, R 
 	return
 !#i::
-	MouseMove, 0, -180, 0, R 
+	MouseMove, 0, -360, 0, R 
 	return
 !#l::
-	MouseMove, 320, 0, 0, R 
+	MouseMove, 640, 0, 0, R 
 	return
 +j::
 	MouseMove, -1, 0, 0, R 
@@ -184,9 +185,6 @@ w::
 ^w::
 	Send ^{Home}
 	return
-+^w::
-	Send +^{Home} 
-	return
 r::
 	Send {End}
 	return
@@ -195,9 +193,6 @@ r::
 	return
 ^r::
 	Send ^{End}
-	return
-+^r::
-	Send +^{End}
 	return
 t::
 	Send {PgUp}
