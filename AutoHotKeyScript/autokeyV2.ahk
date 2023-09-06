@@ -4,11 +4,14 @@
 ;#是win键
 
 
-#Requires AutoHotkey v1.1.33
-dist := 10 ; Distance to move mouse
-dist2 := 13.5 ;
+
+;#Requires AutoHotkey v1.1.33
+dist := 7 ; Distance to move mouse
+dist2 := 7 ;
 freq := 25 ; Timer frequency
-#If GetKeyState("ScrollLock", "P")
+
+dist3 := 1
+#If GetKeyState("NumLock", "P")
 i::
 j::
 k::
@@ -17,6 +20,18 @@ SetTimer Go, % freq
 Go:
 If on := (x := dist * (GetKeyState("l", "P") - GetKeyState("j", "P")))
        | (y := dist2 * (GetKeyState("k", "P") - GetKeyState("i", "P")))
+ MouseMove x, y, 0, R
+Else SetTimer,, Off
+Return
+
++i::
++j::
++k::
++l::
+SetTimer Go1, % 1
+Go1:
+If on := (x := dist3 * (GetKeyState("l", "P") - GetKeyState("j", "P")))
+       | (y := dist3 * (GetKeyState("k", "P") - GetKeyState("i", "P")))
  MouseMove x, y, 0, R
 Else SetTimer,, Off
 Return
@@ -33,19 +48,7 @@ Return
 !#l::
 	MouseMove, 640, 0, 0, R 
 	return
-+j::
-	MouseMove, -1, 0, 0, R 
-	return
-+k::
-	MouseMove, 0, 1, 0, R 
-	return
-+i::
-	MouseMove, 0, -1, 0, R 
-	return
-+l::
-	MouseMove, 1, 0, 0, R 
-	return
- 
+
 n::
 !n::
 ^n::
@@ -321,6 +324,9 @@ z::
 	return 
 !=::
 	Send !{F12}
+	return
++0::
+	Send +{F10}
 	return
 +^1::
 	Send +!{F1}
